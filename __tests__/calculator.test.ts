@@ -16,4 +16,9 @@ describe('String Calculator', () => {
     test('should return the number for a single number string', () => {
         expect(calculator.add("1")).toBe(1);
     });
+
+    // Test for Handle Comma seprated Two Numbers
+    test('should return the sum for two numbers', () => {
+        expect(calculator.add("1,2")).toBe(3);
+    });
 });
