@@ -21,4 +21,9 @@ describe('String Calculator', () => {
     test('should return the sum for two numbers', () => {
         expect(calculator.add("1,2")).toBe(3);
     });
+
+    // Test for handle Multiple number Sum
+    test('should handle multiple numbers', () => {
+        expect(calculator.add("1,2,3,4")).toBe(10);
+    });
 });
