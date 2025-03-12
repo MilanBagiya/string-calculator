@@ -23,6 +23,6 @@ export class Calculator {
             throw new Error(`negative numbers not allowed: ${negatives.join(", ")}`);
         }
 
-        return numArray.reduce((sum, num) => sum + num, 0);
+        return numArray.filter(n => n <= 1000).reduce((sum, num) => sum + num, 0);
     }
 }
