@@ -26,4 +26,9 @@ describe('String Calculator', () => {
     test('should handle multiple numbers', () => {
         expect(calculator.add("1,2,3,4")).toBe(10);
     });
+
+    // Test for handle new line delimiter
+    test('should handle new lines as delimiters', () => {
+        expect(calculator.add("1\n2,3")).toBe(6);
+    });
 });
