@@ -36,4 +36,9 @@ describe('String Calculator', () => {
     test('should handle custom delimiter', () => {
         expect(calculator.add("//;\n1;2")).toBe(3);
     });
+
+    // Test for handle nagative number
+    test('should throw exception for negative number', () => {
+        expect(() => calculator.add("1,-2")).toThrow("negative numbers not allowed: -2");
+    });
 });
