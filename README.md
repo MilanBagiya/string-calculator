@@ -58,13 +58,13 @@ Feel free to explore and extend the functionality of this **String Calculator**!
 "Below are images showcasing all test case scenarios:"
 
 Test 1: Add failing test for empty string returning 0
-![image](https://github.com/user-attachments/assets/54e4cf80-a25f-42a6-8033-7bba2f189c05)
+![image](https://github.com/user-attachments/assets/31148c11-91ab-489d-8683-fb34b272867a)
 
 Test 2: Handle empty string to return 0
-![image](https://github.com/user-attachments/assets/825c2295-2d11-4221-afc2-b63924d9940f)
+![image](https://github.com/user-attachments/assets/7cf7bc01-263f-41d0-a45d-8cfd848f4177)
 
 Test 3: Add failing test for single number
-![image](https://github.com/user-attachments/assets/e3744816-63a3-4761-944e-e850c0ee5bd3)
+![image](https://github.com/user-attachments/assets/9058e540-dc78-4c06-9d67-d0ebba6e804f)
 
 Test 4: Handle single number support for calculation
 ![image](https://github.com/user-attachments/assets/e67b2852-ea39-4e34-829c-12a09c7524ea)
