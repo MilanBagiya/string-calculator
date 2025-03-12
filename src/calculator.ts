@@ -15,6 +15,14 @@ export class Calculator {
 
         const numArray: number[] = normalizedString.split(delimiter).map((num: string) => parseInt(num, 10));
 
+        const parsedNumbers: number[] = numArray.map(num => num);
+
+        const negatives = parsedNumbers.filter(num => num < 0);
+
+        if (negatives.length > 0) {
+            throw new Error(`negative numbers not allowed: ${negatives[0]}`);
+        }
+
         return numArray.reduce((sum, num) => sum + num, 0);
     }
 }
