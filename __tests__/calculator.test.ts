@@ -46,4 +46,9 @@ describe('String Calculator', () => {
     test('should throw exception with all negative numbers', () => {
         expect(() => calculator.add("1,-2,-3")).toThrow("negative numbers not allowed: -2, -3");
     });
+
+    // Test for Ignore Numbers Greater than 1000
+    test('should ignore numbers greater than 1000', () => {
+        expect(calculator.add("2,1001")).toBe(2);
+    });
 });
