@@ -20,7 +20,7 @@ export class Calculator {
         const negatives = parsedNumbers.filter(num => num < 0);
 
         if (negatives.length > 0) {
-            throw new Error(`negative numbers not allowed: ${negatives[0]}`);
+            throw new Error(`negative numbers not allowed: ${negatives.join(", ")}`);
         }
 
         return numArray.reduce((sum, num) => sum + num, 0);
