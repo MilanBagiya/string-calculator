@@ -41,4 +41,9 @@ describe('String Calculator', () => {
     test('should throw exception for negative number', () => {
         expect(() => calculator.add("1,-2")).toThrow("negative numbers not allowed: -2");
     });
+
+    // Test for handle multiple nagative number
+    test('should throw exception with all negative numbers', () => {
+        expect(() => calculator.add("1,-2,-3")).toThrow("negative numbers not allowed: -2, -3");
+    });
 });
