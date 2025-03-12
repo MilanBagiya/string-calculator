@@ -1,5 +1,5 @@
-import express from 'express';
 import cors from 'cors';
+import express, { Request, Response } from 'express';
 import { Calculator } from './calculator';
 
 // Initialize Express application
@@ -16,7 +16,7 @@ app.use(cors());
 app.use(express.json());
 
 // Route for adding numbers using String Calculator
-app.post('/calculate-sum', (req, res) => {
+app.post('/calculate-sum', (req: Request, res: Response) => {
     const { numbers } = req.body;
 
     const stringCalculator = new Calculator();

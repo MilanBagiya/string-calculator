@@ -4,15 +4,20 @@
   "description": "This repository contains solution for Assessment - String Calculator Kata, implemented in TypeScript using Test-Driven Development (TDD) principles. The goal of this project is to demonstrate a commitment to software craftsmanship by writing readable, testable, and well-structured code.",
   "main": "index.js",
   "scripts": {
+    "start": "npx ts-node src/server.ts",
     "test": "jest"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/cors": "^2.8.12",
+    "@types/express": "^4.17.21",
     "@types/jest": "^29.5.14",
+    "@types/node": "^20.5.0",
     "jest": "^29.7.0",
     "ts-jest": "^29.2.6",
+    "ts-node": "^10.9.2",
     "typescript": "^5.8.2"
   },
   "dependencies": {
