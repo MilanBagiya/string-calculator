@@ -108,3 +108,7 @@ Test 16: Handle failing test for ignore numbers greater than 1000
 Test 17: Handle support for ignore numbers greater than 1000
 ![image](https://github.com/user-attachments/assets/8248ff54-0957-420f-be1e-209856549331)
 
+Test 18: Handle the custom string with custom delimeters
+![image](https://github.com/user-attachments/assets/33fa2df4-ce2e-4476-b627-dd4ce64a1b50)
+
+
