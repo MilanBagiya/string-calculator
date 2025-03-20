@@ -13,16 +13,22 @@ export class Calculator {
 
         const normalizedString: string = numberString.replace(/\n/g, delimiter);
 
-        const numArray: number[] = normalizedString.split(delimiter).map((num: string) => parseInt(num, 10));
+        const numArray: string[] = normalizedString.split(delimiter);
 
-        const parsedNumbers: number[] = numArray.map(num => num);
+        const parsedNumbers: number[] = numArray.map(num => num).map((num: string) => parseInt(num, 10));
 
         const negatives = parsedNumbers.filter(num => num < 0);
+
+        const charString: string[] = numArray.filter(num => !Number(num))
+
+        if (charString.length > 0) {
+            throw new Error(`${charString.join(', ')} is not allowed`)
+        }
 
         if (negatives.length > 0) {
             throw new Error(`negative numbers not allowed: ${negatives.join(", ")}`);
         }
 
-        return numArray.filter(n => n <= 1000).reduce((sum, num) => sum + num, 0);
+        return parsedNumbers.filter(n => n <= 1000).reduce((sum, num) => sum + num, 0);
     }
 }
