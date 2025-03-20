@@ -55,5 +55,10 @@ describe('String Calculator', () => {
     // Test should handle the custom string
     test('should handle the custom string', () => {
         expect(() => calculator.add("1,a,3,b,5,c")).toThrow("a, b, c is not allowed");
+    });
+
+    // Test should handle the custom string with custom delimiters
+    test('should handle the custom string with custom delimiters', () => {
+        expect(() => calculator.add("1\nb\n3\na\n5\nd")).toThrow("b, a, d is not allowed");
     })
 });
