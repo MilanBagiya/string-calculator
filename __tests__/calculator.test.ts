@@ -51,4 +51,9 @@ describe('String Calculator', () => {
     test('should ignore numbers greater than 1000', () => {
         expect(calculator.add("2,1001")).toBe(2);
     });
+
+    // Test should handle the custom string
+    test('should handle the custom string', () => {
+        expect(() => calculator.add("1,a,3,b,5,c")).toThrow("a, b, c is not allowed");
+    })
 });
